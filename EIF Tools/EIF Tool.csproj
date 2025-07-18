@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7E9209D-3ED9-4876-8049-9D13A51138E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EIF_Tool</RootNamespace>
+    <AssemblyName>EIF Tool</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=22.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.22.3.0\lib\net40\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="ControlzEx, Version=4.0.0.0, Culture=neutral, PublicKeyToken=69f1c32f803d307e, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.4.4.0\lib\net462\ControlzEx.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Jaeger.Thrift.VendoredThrift, Version=1.0.0.1, Culture=neutral, PublicKeyToken=9516061555a213a8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Jaeger.Thrift.VendoredThrift.0.3.7\lib\netstandard2.0\Jaeger.Thrift.VendoredThrift.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=2.0.0.0, Culture=neutral, PublicKeyToken=51482d6f650b2b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.2.4.9\lib\net47\MahApps.Metro.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=2.0.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.Core.2.19.100\lib\netstandard2.0\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoaterAPDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoaterAPDFrm.Designer.cs">
+      <DependentUpon>CoaterAPDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDataFrm.Designer.cs">
+      <DependentUpon>MasterDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridUtil.cs" />
+    <Compile Include="FileMgrFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileMgrFrm.Designer.cs">
+      <DependentUpon>FileMgrFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdbEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MdbEditFrm.Designer.cs">
+      <DependentUpon>MdbEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestFrm.Designer.cs">
+      <DependentUpon>TestFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SolaceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SolaceFrm.Designer.cs">
+      <DependentUpon>SolaceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraceFrm.Designer.cs">
+      <DependentUpon>TraceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogFrm.Designer.cs">
+      <DependentUpon>LogFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddressFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressFrm.Designer.cs">
+      <DependentUpon>AddressFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APDFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APDFrm.Designer.cs">
+      <DependentUpon>APDFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RMSFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RMSFrm.Designer.cs">
+      <DependentUpon>RMSFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StyleClass.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="CoaterAPDFrm.resx">
+      <DependentUpon>CoaterAPDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDataFrm.resx">
+      <DependentUpon>MasterDataFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileMgrFrm.resx">
+      <DependentUpon>FileMgrFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MdbEditFrm.resx">
+      <DependentUpon>MdbEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestFrm.resx">
+      <DependentUpon>TestFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SolaceFrm.resx">
+      <DependentUpon>SolaceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraceFrm.resx">
+      <DependentUpon>TraceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogFrm.resx">
+      <DependentUpon>LogFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressFrm.resx">
+      <DependentUpon>AddressFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APDFrm.resx">
+      <DependentUpon>APDFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RMSFrm.resx">
+      <DependentUpon>RMSFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

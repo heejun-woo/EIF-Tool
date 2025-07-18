@@ -1,0 +1,10 @@
+<config>
+    <connectionStrings>
+        <name>ESGM 전극</name>
+        <string>Password=$H8346GKck*;Persist Security Info=True;User ID=gmes_eif;Initial Catalog=ESGM_BEIF_ELTR_P01_EA;Data Source=10.95.9.45,7433</string>
+    </connectionStrings>
+    <connectionStrings>
+        <name>ESGM 조립</name>
+        <string>Password=$H8346GKck*;Persist Security Info=True;User ID=gmes_eif;Initial Catalog=ESGM_BEIF_CELL_P01_AA;Data Source=10.95.9.52,7433</string>
+    </connectionStrings>
+</config>
