@@ -13,7 +13,7 @@ public static class Util
 {
 
     //=====================================================================
-    //  DateTime 문자
+    //  DateTime 문자 
     //=====================================================================
     public static string DateTimeText(DateTime datetime)
     {
