@@ -1,0 +1,16 @@
+﻿<config>
+    <connectionStrings>
+        <name>DB_CONNECTION_EL_ORACLE</name>
+        <string>Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.84.201.33)(PORT=3521))(CONNECT_DATA=(SERVICE_NAME=MLEMESP)));User ID=EEIF_MGR;Password=!MESdnsdud2025</string>
+    </connectionStrings>
+    <connectionStrings>
+        <name>DB_CONNECTION_ASSY_ORACLE</name>
+        <string>Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.84.201.38)(PORT=3521))(CONNECT_DATA=(SERVICE_NAME=MLAMESP)));User ID=AEIF_MGR;Password=!MESdnsdud2025</string>
+    </connectionStrings>
+
+    <connectionStrings>
+        <name>DB_CONNECTION_LOCAL_VASSY</name>
+        <string>Password=1234;Persist Security Info=True;User ID=sa;Initial Catalog=LOCAL_VASSY;Data Source=P2510LN0018\SQLEXPRESS</string>
+    </connectionStrings>
+</config>
+
